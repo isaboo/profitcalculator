@@ -1,4 +1,3 @@
-$("td").attr("align", "right");
 function calculate() {
     var tableItems = [
         "salesPrice",

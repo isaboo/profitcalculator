@@ -1,8 +1,6 @@
 html, body, .main {
-    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;#
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     text-align: left;
-}
-.main {
 }
 th, td {
     border: 1px solid black;
