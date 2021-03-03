@@ -1,0 +1,30 @@
+html, body, .main {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;#
+    text-align: left;
+}
+.main {
+}
+th, td {
+    border: 1px solid black;
+    width: 100px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th {
+    width: 200px;
+}
+td {
+    text-align: right;
+}
+.grand {
+    background-color: yellow;
+}
+.income {
+    background-color: rgb(0, 255, 0);
+}
+.expense {
+    background-color: rgb(247, 53, 53);
+}
+.profit {
+    font-size: 20px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <form onsubmit="return false">
+            <h2>Profit Calculator!</h2>
+            <hr/>
+            <h4>Income</h4>
+            Sales Price: <input id="sale" placeholder="Type here..."/><br/>
+            Post Recieved: <input id="postPrice" placeholder="Type here..."/>
+            <h4>Expense</h4>
+            Purchase price: <input id="purchase" placeholder="Type here..."/></br>
+            Postage paid: <input id="postage" placeholder="Type here..."/>
+            <hr/>
+            <input type="submit" value="calculate" onclick="calculate();"/>
+        </form>
+        <table>
+            <tr>
+                <th>Breakdown of calculations</th>
+            </tr>
+            <tr class="income">
+                <th>Sales Price</th>
+                <td id="salesPrice"><i>null</i></td>
+            </tr>
+            <tr class="income">
+                <th>Postage recieved</th>
+                <td id="postagePrice"><i>null</i></td>
+            </tr>
+            <tr class="income">
+                <th>Total Income</th>
+                <td id="totalIncome"><i>null</i></td>
+            </tr>
+            </span>
+            <tr class="expense">
+                <th>Purchase Price</th>
+                <td id="purchasePrice"><i>null</i></td>
+            </tr>
+            <tr class="expense">
+                <th>Postage paid</th>
+                <td style="text-align: right;" id="postPaid"><i>null</i></td>
+            </tr>
+            <tr class="expense">
+                <th>Ebay Fixed fee</th>
+                <td id="fixed"><i>0.36</i></td>
+            </tr>
+            <tr class="expense">
+                <th>Ebay final value fee</th>
+                <td id="finalFee"><i>11.9%</i></td>
+            </tr>
+            <tr class="expense">
+                <th>Total Expense</th>
+                <td id="totalExpense"><i>null</i></td>
+            </tr>
+            <tr class="grand profit">
+                <th>Profit</th>
+                <td id="profit"><i>null</i></td>
+            </tr>
+            <tr class="grand">
+                <th>Cash</th>
+                <td id="cash"><i>null</i></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
